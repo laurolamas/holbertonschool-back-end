@@ -3,12 +3,12 @@
 Task 0 fewfewfwef
 """
 
-import requests
-import sys
 
+if __name__ == '__main__':
+    import requests
+    import sys
 
-def get_emp_todo_list(emp_id):
-    """ Get employer tofo list """
+    emp_id = sys.argv[1]
 
     url = f"https://jsonplaceholder.typicode.com/users/{emp_id}/todos"
     resp = requests.get(url)
@@ -27,6 +27,3 @@ def get_emp_todo_list(emp_id):
 
     for task in comp_tasks:
         print(f"\t {task}")
-
-""" AAAAAAAAAAAAAA """
-get_emp_todo_list(sys.argv[1])
