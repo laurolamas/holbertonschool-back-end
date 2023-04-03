@@ -20,9 +20,9 @@ if __name__ == '__main__':
 
     for task in emp_tasks:
 
-        output = "\"{}\",\"{}\",\"{}\",\"{}\"".format(
+        output = "\"{}\",\"{}\",\"{}\",\"{}\"\n".format(
             emp_info.get("id"), emp_info.get("username"),
-            task.get("completed"), task.get("tite"))
+            task.get("completed"), task.get("title"))
 
         with open(f"{emp_id}.csv", mode="a", encoding="utf-8") as f:
             f.write(output)
