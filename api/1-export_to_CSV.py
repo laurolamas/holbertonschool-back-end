@@ -30,5 +30,4 @@ if __name__ == '__main__':
         text += f"{task.get('completed')}\",\"{task.get('title')}\"\n"
 
     text = text[:-1]
-    """write_file(f"{UserId}.csv", text)"""
-    print(text)
+    write_file(f"{UserId}.csv", text)
