@@ -22,7 +22,7 @@ if __name__ == '__main__':
         id = user.get('id')
 
         userTasks = requests.get(
-            f'https://jsonplaceholder.typicode.com""/users/{id}/todos').json()
+            f'https://jsonplaceholder.typicode.com/users/{id}/todos').json()
 
         newList = []
 
