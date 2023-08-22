@@ -12,8 +12,10 @@ if __name__ == '__main__':
 
     taskId = sys.argv[1]
 
-    userTasks = requests.get(f'https://jsonplaceholder.typicode.com/users/{taskId}/todos').json()
-    userInfo = requests.get(f'https://jsonplaceholder.typicode.com/users/{taskId}').json()
+    userTasks = requests.get(
+        f'https://jsonplaceholder.typicode.com/users/{taskId}/todos').json()
+    userInfo = requests.get(
+        f'https://jsonplaceholder.typicode.com/users/{taskId}').json()
 
     userName = userInfo.get('name')
     completedTasks = [todo for todo in userTasks if todo['completed']]
