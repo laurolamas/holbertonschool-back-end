@@ -27,7 +27,8 @@ if __name__ == '__main__':
     text = ""
     for task in userTasks:
         text += f"\"{UserId}\",\"{userName}\",\""
-        f"{task.get('completed')}\",\"{task.get('title')}\"\n"
+        text += f"{task.get('completed')}\",\"{task.get('title')}\"\n"
 
     text = text[:-1]
-    write_file(f"{UserId}.csv", text)
+    """write_file(f"{UserId}.csv", text)"""
+    print(text)
