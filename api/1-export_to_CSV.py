@@ -23,7 +23,7 @@ if __name__ == '__main__':
     userInfo = requests.get(
         f'https://jsonplaceholder.typicode.com/users/{UserId}').json()
 
-    userName = userInfo.get('name')
+    userName = userInfo.get('username')
     text = ""
     for task in userTasks:
         text += f"\"{UserId}\",\"{userName}\",\""
