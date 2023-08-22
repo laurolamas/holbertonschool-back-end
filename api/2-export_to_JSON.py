@@ -24,7 +24,7 @@ if __name__ == '__main__':
     userInfo = requests.get(
         f'https://jsonplaceholder.typicode.com/users/{UserId}').json()
 
-    userName = userInfo.get('name')
+    userName = userInfo.get('username')
     newList = []
 
     for task in userTasks:
