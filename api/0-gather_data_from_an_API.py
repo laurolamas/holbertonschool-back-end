@@ -20,6 +20,6 @@ if __name__ == '__main__':
     userName = userInfo.get('name')
     completedTasks = [todo for todo in userTasks if todo['completed']]
     print(f"Employee {userName} is done with"
-          " tasks({len(completedTasks)}/{len(userTasks)}):")
+          f" tasks({len(completedTasks)}/{len(userTasks)}):")
     for task in completedTasks:
         print(f"\t {task.get('title')}")
